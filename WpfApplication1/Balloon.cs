@@ -65,9 +65,15 @@ namespace WpfApplication1
             ellipse.Height = diameter;
         }
 
-        public void Move()
+        public void MoveUp()
         {
             y -= 10;
+            ellipse.Margin = new Thickness(x, y, 0, 0);
+        }
+
+        public void MoveDown()
+        {
+            y += 10;
             ellipse.Margin = new Thickness(x, y, 0, 0);
         }
 

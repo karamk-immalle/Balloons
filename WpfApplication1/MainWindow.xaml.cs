@@ -41,11 +41,19 @@ namespace WpfApplication1
             }
         }
 
-        private void moveButton_Click(object sender, RoutedEventArgs e)
+        private void moveupButton_Click(object sender, RoutedEventArgs e)
         {
             foreach (var b in balloons)
             {
-                b.Move();
+                b.MoveUp();
+            }
+        }
+
+        private void movedownButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var b in balloons)
+            {
+                b.MoveDown();
             }
         }
     }
